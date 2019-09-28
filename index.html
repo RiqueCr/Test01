@@ -33,24 +33,32 @@
 
     <br>
     <form action="/action_page.php">
-        <select name="cars">
+        <select name="cars" id="cars">
             <option id="volvo" value="volvo">Volvo</option>
             <option id="saab" value="saab">Saab</option>
             <option id="fiat" value="fiat">Fiat</option>
             <option id="audi" value="audi">Audi</option>
         </select>
         <br><br>
-        <input type="submit">
+      <button type="button" onclick="hola()"> click</button>
     </form>
+
+    <p id="demos"></p>
 
 </body>
 </html>
 
 <script>
+    var volvo = document.getElementById("volvo").val();
+     var volvo2 = document.getElementById("saab").val();
+      var volvo3 = document.getElementById("fiat").val();
+       var volvo4 = document.getElementById("audi").val();
+function hola() {
+    document.getElementById("demos").innerHTML = ;
+    
+}
+
     // document.getElementById("demo").innerHTML = "Hello JavaScript!";
 
-    document.getElementById("volvo").innerHTML = "no lo se";
-    document.getElementById("saab").innerHTML = "que";
-    document.getElementById("fiat").innerHTML = "paso";
-    document.getElementById("audi").innerHTML = "jkakjakja";
+    
 </script>
