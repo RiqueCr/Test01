@@ -26,18 +26,18 @@
     <h4>kjakjakjakjakj</h4>
     <h4>hello</h4>
 
-    <h1>RAMA 02</h1>
+    <h1>RAMA 03</h1>
 
     <p>findsifonas</p>
 
 
     <br>
-    <form action="/action_page.php">
+    <form action="index.html">
         <select name="cars" id="cars">
-            <option id="volvo" value="volvo">Volvo</option>
-            <option id="saab" value="saab">Saab</option>
-            <option id="fiat" value="fiat">Fiat</option>
-            <option id="audi" value="audi">Audi</option>
+            <option id="1" value="volvo">Volvo</option>
+            <option id="2" value="saab">Saab</option>
+            <option id="3" value="fiat">Fiat</option>
+            <option id="4" value="audi">Audi</option>
         </select>
         <br><br>
       <button type="button" onclick="hola()"> click</button>
@@ -45,20 +45,15 @@
 
     <p id="demos"></p>
 
+    <script>  
+
+            function hola(){
+                 var a = document.getElementById("cars").value;
+                 document.getElementById("demos").innerHTML = a;
+            }
+
+    </script>
+
 </body>
 </html>
 
-<script>
-    var volvo = document.getElementById("volvo").val();
-     var volvo2 = document.getElementById("saab").val();
-      var volvo3 = document.getElementById("fiat").val();
-       var volvo4 = document.getElementById("audi").val();
-function hola() {
-    document.getElementById("demos").innerHTML = ;
-    
-}
-
-    // document.getElementById("demo").innerHTML = "Hello JavaScript!";
-
-    
-</script>
