@@ -43,18 +43,40 @@
       <button type="button" onclick="hola()"> click</button>
     </form>
 
-    <p id="demos"></p>
+<!--     
+    <table>
+        <tr>
+            <td><div id="div_volvo"></div></td>
+        </tr>
+        <tr>
+            <td><div id="div_saab"></div></td>
+        </tr>
+        <tr>
+            <td><div id="div_fiat"></div></td>
+        </tr>
+        <tr>
+            <td><div id="div_audi"></div></td>
+        </tr>
+    </table> -->
 
+    <div id="demos"></div>
 </body>
 </html>
 
 <script>
-    var volvo = document.getElementById("volvo").val();
-     var volvo2 = document.getElementById("saab").val();
-      var volvo3 = document.getElementById("fiat").val();
-       var volvo4 = document.getElementById("audi").val();
+   
 function hola() {
-    document.getElementById("demos").innerHTML = ;
+    var   volvo = document.getElementById("volvo").value;
+    var  volvo2 = document.getElementById("saab").value;
+    var  volvo3 = document.getElementById("fiat").value;
+    var  volvo4 = document.getElementById("audi").value;
+    
+    document.getElementById('demos').innerHTML = volvo;
+   
+    // document.getElementById('demos').innerHTML = volvo2;
+    // document.getElementById('demos').innerHTML = volvo3;
+    // document.getElementById('demos').innerHTML = volvo4;
+    
     
 }
 
